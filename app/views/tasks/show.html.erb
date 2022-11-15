@@ -1,0 +1,11 @@
+<h2>My task manager :</h2>
+
+<ol>
+    <li>
+      <%= @task.title %> - <%= @task.details %>
+    </li>
+</ol>
+
+<%= link_to "Edit task", edit_task_path(@task) %>
+
+<%= link_to "Return to all tasks", tasks_path %>
